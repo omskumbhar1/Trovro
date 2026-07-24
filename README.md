@@ -11,11 +11,19 @@ Static site for Trovro. No build step, no dependencies — plain HTML/CSS/JS.
 ├── 404.html              not-found page
 ├── CNAME                 custom domain for GitHub Pages
 └── assets/
-    ├── style.css         all styling, shared by every page
-    ├── site.js           nav + scroll behaviour
-    ├── logo.png          the house/arrow mark
-    └── favicon.png
+    ├── style.css             all styling, shared by every page
+    ├── site.js               nav + scroll behaviour
+    ├── logo.png              the brand mark (dark tile, used in nav + footer)
+    ├── favicon.png           48px tab icon
+    ├── favicon-32.png        32px tab icon
+    ├── favicon-16.png        16px tab icon
+    ├── apple-touch-icon.png  180px, iOS home screen
+    ├── icon-512.png          512px master icon
+    └── og-image.png          1200x630 link preview (WhatsApp, X, LinkedIn)
 ```
+
+Paths inside `style.css` are relative to `assets/`, not to the page — the logo is
+referenced as `url("logo.png")`, not `url("assets/logo.png")`.
 
 ---
 
